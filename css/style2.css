@@ -488,19 +488,6 @@ audio {
 .mainmenu > ul > li:last-child > ul {
     right: 0;
 }
-.mainmenu ul li:hover > ul,
-.mainmenu ul li:hover > .mega-menu {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-    top: 100%;
-	border-top: 2px solid #00468c;
-	-o-box-shadow: 0px 0px 25px -10px;
-    -ms-box-shadow: 0px 0px 25px -10px;
-    -moz-box-shadow: 0px 0px 25px -10px;
-    -webkit-box-shadow: 0px 0px 25px -10px;
-    box-shadow: 0px 0px 25px -10px;
-}
 .mainmenu ul ul li {
     display: block;
 }
@@ -916,9 +903,9 @@ audio {
     width: 60px;
     height: 60px;
 	color:#ffffff;
-    border: 1px solid #e5ae49;
+    border: 1px solid #4987e5;
     border-left: none;
-    background-color: #e5ae49;
+    background-color: #4987e5;
     text-align: center;
     padding: 0px;
 	font-size:24px;
@@ -1103,48 +1090,56 @@ audio {
     right: 0;
 	display:block;
 }
-.gc_slider_img_section  .owl-theme .owl-nav .owl-prev{
+.gc_slider_img_section .owl-theme .owl-nav .owl-prev {
     font-size: 50px;
     margin: 0;
     padding: 0;
     left: 0;
-	top:50px;
+    top: 30px;
     position: absolute;
     text-align: center;
-	background:rgba(255, 255, 255, 0.18);
-	color:#ffffff;
-	width:80px;
-	height:80px;
-	padding-right: 7px;
-	text-align:center;
-	line-height:75px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    padding-right: 7px;
+    line-height: 75px;
+    border-radius: 50%; /* circular button */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); /* blur background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* soft shadow */
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
-.gc_slider_img_section   .owl-theme .owl-nav .owl-next{
+
+.gc_slider_img_section .owl-theme .owl-nav .owl-next {
     font-size: 50px;
     margin: 0;
     padding: 0;
     right: 0;
-	top:30px;
+    top: 30px;
     position: absolute;
     text-align: center;
-	background:rgba(255, 255, 255, 0.18);
-	color:#ffffff;
-	width:80px;
-	height:80px;
-	padding-left: 5px;
-	text-align:center;
-	line-height:75px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    padding-left: 5px;
+    line-height: 75px;
+    border-radius: 50%; /* Makes it circular */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); /* Blur effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
+
 .gc_slider_img_section  .owl-theme .owl-nav .owl-prev:hover, .gc_slider_img_section   .owl-theme .owl-nav .owl-next:hover{
 	background:#00468c;
 	-webkit-transition: all 0.5s;
@@ -2072,11 +2067,11 @@ audio {
   left: 15px;
   right: 15px;
   bottom: 15px;
-  -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+  -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
 	overflow:hidden;
 	visibility:visible;
 }
@@ -2223,10 +2218,10 @@ audio {
 	font-size:16px;
 	font-weight:bold;
 	-webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+    -o-transition: all 2s;
+    -ms-transition: all 2s;
+    -moz-transition: all 2s;
+    transition: all 2s;
 	letter-spacing:2px;
 	border:2px solid #00468c;
 }
@@ -3806,33 +3801,54 @@ audio {
 }
 
 /******************-- ZOOM SCALE CSS START --****************************/
-.gc_about_img_wrapper .zoom, .III_column .zoom, .gc_upcom_slider_wrapper .zoom, .gc_blog_post_wrapper .zoom{ 
-	width: 100%; 
-	float:left;
-    -webkit-transition: all .3s ease-out; 
-    -moz-transition: all .3s ease-out; 
-    -o-transition: all .3s ease-out; 
-    transition: all .3s ease-out; 
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
+/* Base Zoom Style */
+.zoom {
+  width: 100%;
+  float: left;
+  transition: all 0.3s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Always visible shadow */
+  border-radius: 6px; /* Slightly rounded corners */
 }
-.gc_about_img_wrapper:hover .zoom, .III_column:hover .zoom, .gc_upcom_slider_wrapper:hover .zoom, .gc_blog_post_wrapper:hover .zoom { 
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
-    M11=1.1, M12=-0, M21=0, M22=1.1);
-  
+
+/* Hover Zoom Effect */
+.gc_about_img_wrapper:hover .zoom,
+.III_column:hover .zoom,
+.gc_upcom_slider_wrapper:hover .zoom,
+.gc_blog_post_wrapper:hover .zoom {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35); /* Bigger, deeper shadow */
 }
-.image{ 
-	margin: 0; 
-	border: 0 
+
+/* Image Styling */
+.zoom.image.img-responsive,
+.zoom.img-responsive {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.gc_about_img_wrapper, .gc_filter_cont_overlay_wrapper, .gc_com_slider_img_wrapper, .gc_blog_img_wrapper{
-	overflow:hidden;
+
+/* Active Click Effect */
+.zoom.image.img-responsive:active,
+.zoom.img-responsive:active {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  transform: scale(0.98);
 }
+
+/* Reset image defaults */
+.image {
+  margin: 0;
+  border: 0;
+}
+
+/* Prevent overflow for wrappers */
+.gc_about_img_wrapper,
+.gc_filter_cont_overlay_wrapper,
+.gc_com_slider_img_wrapper,
+.gc_blog_img_wrapper {
+  overflow: hidden;
+}
+
 /******************-- ZOOM SCALE CSS END --****************************/
 
 

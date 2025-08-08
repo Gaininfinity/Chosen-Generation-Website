@@ -459,7 +459,7 @@ audio {
     top: 20px;
     position: absolute;
 	left:0;
-    right: 0;
+    right: 100px;
 	margin:0px auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -4524,7 +4524,6 @@ audio {
 	background: #000;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 35px;
     padding-right: 35px;
 	margin-top:-5px;
 }
@@ -5553,6 +5552,17 @@ audio {
 /******************-- CAUSES SINGLE CSS END --****************************/
 .gc_contact_map_wrapper{
 	padding-top:80px;
+}
+/* Glassmorphism effect for contact form */
+.gc_causes_single_contact_form_wrapper .container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 40px 20px;
+  margin-bottom: 30px;
 }
 .gc_contact_section_form_wrapper{
 	margin-top:150px;

@@ -130,22 +130,18 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
+  right: 100%;
   width: 300PX;
   height: 100%;
-  background-color: #f3f3f3;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(200px);
   color: #000000;
   visibility: hidden;
   /* Force Hardware Acceleration */
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
-  -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
-  transition: transform 0.5s 0s, visibility 0s 0.5s;
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 40px 30px;
+  margin-bottom: 30px;
 }
 .cd-dropdown h2 {
   /* dropdown title - mobile version only */
