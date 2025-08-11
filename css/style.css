@@ -209,7 +209,7 @@ audio {
 	display:inline-block;
 }
 .header-area{
-	float:left;
+	float: left;
 	width:100%;
 }
 
@@ -351,6 +351,13 @@ audio {
     -webkit-transform-origin: 0 0 0;
     transform-origin: 0 0 0;
 }
+.mainmenu > ul {
+    display: flex;
+    justify-content: flex-end; /* pushes menu items to the right */
+    list-style: none; /* optional: removes bullets */
+    margin: 0;
+    padding: 0;
+}
 .mainmenu > ul > li:last-child > ul {
     right: 0;
 }
@@ -459,7 +466,7 @@ audio {
     top: 20px;
     position: absolute;
 	left:0;
-    right: 100px;
+    right: 158px;
 	margin:0px auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -7341,7 +7348,12 @@ font-family: 'Droid Serif', serif;
 		text-align:center;
 	}
 	.gc_bottom_footer_copy_wrapper{
-		display:inline-block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
 	}
 	.gc_bottom_footer_right_wrapper ul{
 		display:inline-block;

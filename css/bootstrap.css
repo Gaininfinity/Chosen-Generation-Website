@@ -1083,6 +1083,7 @@ th {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  white-space: nowrap;
 }
 *:before,
 *:after {
@@ -1623,6 +1624,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
 }
 .row {
   margin-right: -15px;
@@ -1971,7 +1973,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
   .col-md-5 {
     width: 41.66666667%;

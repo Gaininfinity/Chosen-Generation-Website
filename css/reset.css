@@ -15,7 +15,7 @@ header {
   margin: 20px 0 0 0%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-      float: right;
+  float: right;
 }
 .house_toggle i{
 	font-size:17px;
@@ -134,7 +134,7 @@ header {
   width: 300PX;
   height: 100%;
   background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(20px);
   color: #000000;
   visibility: hidden;
   /* Force Hardware Acceleration */
@@ -274,7 +274,6 @@ header {
     transition: opacity 0.3s 0s, visibility 0.3s 0s, transform 0.3s 0s;
   }
 }
-
 .cd-dropdown-content, .cd-dropdown-content ul {
   position: absolute;
   top: 0;
