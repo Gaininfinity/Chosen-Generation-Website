@@ -2808,7 +2808,6 @@ audio {
     line-height: 25px;
     color: #121212;
 }
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .gc_event_bottom_cont h4,

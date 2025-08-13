@@ -2319,16 +2319,40 @@ audio {
 .gc_filter_heading{
 	display:inline-block;
 }
-.gc_filter_heading h2{
-	font-family: 'Great Vibes', cursive;
-	color: #121212;
-	font-size:30px;
+.gc_filter_heading h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #121212;
+    font-size: 30px;
 }
-.gc_filter_heading h1{
-	font-size:36px;
-	padding-top:10px;
-	color:#00468c;
-	position:relative;
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gc_filter_heading h2 {
+        font-size: 30px;           /* Smaller text for mobile */
+        line-height: 1.3;          /* Better spacing for wrapped text */
+        white-space: normal;       /* Allow line breaks */
+        word-wrap: break-word;     /* Break long words if needed */
+        overflow-wrap: break-word;
+        text-align: justify;       /* Justify text for cleaner look */
+    }
+}
+.gc_filter_heading h1 {
+    font-size: 36px;
+    padding-top: 10px;
+    color: #00468c;
+    position: relative;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gc_filter_heading h1 {
+        font-size: 24px;           /* Smaller text size for mobile */
+        line-height: 1.3;          /* Comfortable spacing for wrapped text */
+        white-space: normal;       /* Allow line breaks */
+        word-wrap: break-word;     /* Break long words if needed */
+        overflow-wrap: break-word;
+        text-align: justify;       /* Neat alignment on mobile */
+    }
 }
 .gc_filter_heading h1:after{
 	content:'';
@@ -4033,9 +4057,21 @@ audio {
 	float:left;
 	width:100%;
 }
-.gc_get_pera p{
-	color:rgba(255, 255, 255, 0.78);
-	padding-top:30px;
+.gc_get_pera p {
+    color: rgba(255, 255, 255, 0.78);
+    padding-top: 30px;
+}
+
+/* Mobile text responsiveness */
+@media (max-width: 768px) {
+    .gc_get_pera p {
+        font-size: 14px;              /* smaller text for mobile */
+        line-height: 1.5;              /* better readability */
+        word-wrap: break-word;         /* break long words */
+        overflow-wrap: break-word;     /* modern wrapping */
+        white-space: normal;           /* allow wrapping */
+        text-align: justify;           /* even text alignment */
+    }
 }
 .gc_get_pera p a{
 	color:#00468c;
@@ -4068,10 +4104,22 @@ audio {
 	width:calc(100% - 50px);
 	padding-left:25px;
 }
-.gc_map_location_icon_cont_wrapper h3{
-	font-size:16px;
-	color:#ffffff;
-	padding-top: 16px;
+.gc_map_location_icon_cont_wrapper h3 {
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 16px;
+}
+
+/* Mobile text responsiveness */
+@media (max-width: 768px) {
+    .gc_map_location_icon_cont_wrapper h3 {
+        font-size: 14px;              /* smaller text for mobile */
+        line-height: 1.4;              /* better readability */
+        word-wrap: break-word;         /* break long words */
+        overflow-wrap: break-word;     /* modern wrapping */
+        white-space: normal;           /* allow wrapping */
+        text-align: justify;           /* even text alignment */
+    }
 }
 .gc_map_location_icon_cont_wrapper h3 a{
 	color:#ffffff;
@@ -4346,8 +4394,19 @@ audio {
 	padding-top:40px;
 	padding-bottom:40px;
 }
-.gc_bottom_footer_copy_wrapper p{
-	margin:0;
+.gc_bottom_footer_copy_wrapper p {
+    margin: 0;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .gc_bottom_footer_copy_wrapper p {
+        font-size: 16px;      /* Smaller text on mobile */
+        line-height: 1.4;     /* More readable spacing */
+        word-wrap: break-word; /* Break long words if needed */
+        white-space: normal;   /* Allow text to wrap */
+        text-align: justify;   /* Justify for neat look */
+    }
 }
 .gc_bottom_footer_copy_wrapper a{
 	color:#00468c;
@@ -7402,11 +7461,31 @@ font-family: 'Droid Serif', serif;
 		width:100%;
 		top:0;
 	}
-	.gc_right_map_main_wrapper{
-		width:100%;
-		top:0;
-		margin-top:30px;
-	}
+	.gc_right_map_main_wrapper {
+    width: 100%;
+    max-width: 400px;       /* Limit size for desktop */
+    aspect-ratio: 1 / 1;    /* Makes it a square */
+    margin: 30px auto 0;    /* Center on page */
+    border-radius: 12px;    /* Rounded edges */
+    overflow: hidden;       /* Clip inside content to fit box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gc_right_map_main_wrapper {
+        max-width: 90%;     /* Smaller for mobile */
+        aspect-ratio: 1 / 1; /* Keep square */
+        margin-top: 15px;
+    }
+
+    .gc_right_map_main_wrapper iframe,
+    .gc_right_map_main_wrapper img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover; /* Fills the box nicely */
+    }
+}
 	.gc_map_main_wrapper{
 		padding-bottom:100px;
 	}
