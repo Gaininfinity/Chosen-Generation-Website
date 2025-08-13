@@ -133,6 +133,10 @@ header {
   right: 100%;
   width: 300PX;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(20px);
   color: #000000;
@@ -213,6 +217,7 @@ header {
   transform: translateX(-50%) translateY(-50%) rotate(-45deg);
 }
 .cd-dropdown.dropdown-is-active {
+  opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -357,6 +362,10 @@ header {
     padding-top: 60px;
   }
   .cd-dropdown-content a, .cd-dropdown-content ul a {
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.3rem;
+    border-color: #d3d3d3;
   }
 }
 @media only screen and (min-width: 1024px) {

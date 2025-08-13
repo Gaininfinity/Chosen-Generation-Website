@@ -1301,8 +1301,23 @@ h6,
 .h6 {
   font-size: 12px;
 }
-p {
-  margin: 0 0 10px;
+.gc_about_bottom_cont_wrapper {
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+}
+
+/* Mobile view text styling */
+@media screen and (max-width: 768px) {
+    .gc_about_bottom_cont_wrapper p {
+        font-size: 14px;              /* smaller font for mobile */
+        line-height: 1.5;              /* improve readability */
+        word-wrap: break-word;         /* break long words for older browsers */
+        overflow-wrap: break-word;     /* modern word wrapping */
+        white-space: normal;           /* allow wrapping */
+        text-align: justify;           /* clean alignment */
+        hyphens: auto;                 /* optional: better word breaks */
+    }
 }
 .lead {
   margin-bottom: 20px;

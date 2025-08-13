@@ -1302,20 +1302,32 @@ audio {
 	top: 100%;
 	margin-top: 10px;
 }
-.gc_event_heading_cont_wrapper h4{
-	font-size:22px;
-	font-family: 'Lato', sans-serif;
-	color:#000000;
-	float: left;
-	padding-top:30px;
+.gc_event_heading_cont_wrapper h4 {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    float: left;
+    padding-top: 30px;
 }
+
+/* Mobile text adjustments only */
+@media (max-width: 768px) {
+    .gc_event_heading_cont_wrapper h4 {
+        font-size: 30px;               /* smaller font for mobile */
+        line-height: 1.4;               /* better readability */
+        word-wrap: break-word;          /* break long words */
+        overflow-wrap: break-word;      /* modern wrapping */
+        white-space: normal;            /* allow wrapping */
+    }
+}
+
 .gc_event_heading_cont_time_wrapper p{
 	font-size:18px;
 	font-style:italic;
 	font-family: 'Droid Serif', serif;
 	color: #121212;
 	float:left;
-	padding-top:30px;
+	padding-top:50px;
 }
 .gc_event_heading_cont_time_wrapper i{
 	color:#00468c;
@@ -1340,6 +1352,17 @@ audio {
 	text-transform:uppercase;
 	font-family: 'Lato', sans-serif;
 }
+/* Mobile text adjustments only */
+@media (max-width: 768px) {
+    #clockdiv {
+        font-size: 14px;              /* slightly smaller text on mobile */
+        line-height: 1.4;              /* better readability */
+        word-wrap: break-word;         /* break long words if needed */
+        overflow-wrap: break-word;     /* modern wrapping */
+        white-space: normal;           /* allow text to wrap naturally */
+    }
+}
+
 #clockdiv > div{
 	padding: 0px;
 	border-radius: 10px;
@@ -1685,10 +1708,21 @@ audio {
 	color:#ffffff;
 	padding-top:10px;
 }
-.gc_about_heading h1{
-	float:left;
-	width:calc(100% - 20%);
-	color:#00468c;
+.gc_about_heading h1 {
+    float: left;
+    width: calc(100% - 20%);
+    color: #00468c;
+}
+
+/* Mobile text adjustments */
+@media screen and (max-width: 768px) {
+    .gc_about_heading h1 {
+        font-size: 20px;              /* smaller font for mobile */
+        line-height: 1.3;              /* better spacing */
+        word-wrap: break-word;         /* break long words */
+        overflow-wrap: break-word;     /* modern wrapping */
+        white-space: normal;           /* allow natural wrapping */
+    }
 }
 .gc_dot_wrapper{
 	float:left;
@@ -1751,20 +1785,24 @@ audio {
 }
 .gc_about_heading:after{
 	content:'';
-	border:1px solid #00468c;
+	border:1px;
 	width:160px;
 	display:inline-block;
 }
-.gc_about_heading:before{
-	content:'';
-	border:1px solid #00468c;
-	width:448px;
-	display:inline-block;
-	position:absolute;
-	bottom:0;
+.gc_about_heading_wrapper p {
+    padding-top: 30px;
 }
-.gc_about_heading_wrapper p{
-	padding-top:30px;
+
+/* Mobile text size + wrapping + justification */
+@media screen and (max-width: 768px) {
+    .gc_about_heading_wrapper p {
+        font-size: 14px;              /* smaller for mobile */
+        line-height: 1.5;              /* better readability */
+        word-wrap: break-word;         /* break long words */
+        overflow-wrap: break-word;     /* modern word wrapping */
+        white-space: normal;           /* allow natural wrapping */
+        text-align: justify;           /* justify text for clean edges */
+    }
 }
 .gc_about_heading_wrapper p a{
 	color:#00468c;
@@ -1911,8 +1949,23 @@ audio {
 .gc_filter_heading_wrapper{
 	text-align:center;
 }
-.gc_filter_heading{
-	display:inline-block;
+.gc_filter_heading h1 {
+    font-size: 36px;
+    padding-top: 10px;
+    color: #00468c;
+    position: relative;
+    word-wrap: break-word;     /* allow long words to wrap */
+    overflow-wrap: break-word;
+    max-width: 100%;           /* prevent overflow */
+}
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .gc_filter_heading h1 {
+        font-size: 22px;       /* smaller for mobile */
+        padding-top: 5px;      /* less top spacing */
+        text-align: center;    /* center heading */
+        line-height: 1.3;      /* better readability */
+    }
 }
 .gc_filter_heading h2{
 	font-family: 'Great Vibes', cursive;
@@ -2424,10 +2477,22 @@ audio {
 	width:100%;
 	padding-bottom:60px;
 }
-.gc_program_main_heading h3{
-	font-size:26px;
-	color:#00468c;
-	position:relative;
+.gc_program_main_heading h3 {
+    font-size: 26px;
+    color: #00468c;
+    position: relative;
+}
+
+/* Mobile text responsiveness */
+@media (max-width: 768px) {
+    .gc_program_main_heading h3 {
+        font-size: 26px;              /* smaller for mobile */
+        line-height: 1.4;              /* better readability */
+        word-wrap: break-word;         /* break long words if needed */
+        overflow-wrap: break-word;     /* modern wrapping */
+        white-space: normal;           /* allow normal text wrapping */
+        text-align: justify;           /* make text justified */
+    }
 }
 .gc_program_main_heading h3:after{
 	content:'';
@@ -2713,6 +2778,7 @@ audio {
 .gc_event_time_cont p{
 	float:left;
 	padding-left:13px;
+	line-height:0px;
 	color:#ffffff;
 }
 .gc_user_icon_wrapper i{
@@ -2732,22 +2798,50 @@ audio {
 	width:25px;
 	padding-top:30px;
 }
-.gc_event_bottom_cont h4, .gc_event_bottom_cont h3{
-	font-size:18px;
-	font-style:italic;
-	padding-top:30px;
-	width:calc(100% - 25px);
-	float:left;
-	line-height:25px;
-	color:#121212;
+.gc_event_bottom_cont h4,
+.gc_event_bottom_cont h3 {
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 30px;
+    width: calc(100% - 25px);
+    float: left;
+    line-height: 25px;
+    color: #121212;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gc_event_bottom_cont h4,
+    .gc_event_bottom_cont h3 {
+        font-size: 14px;               /* smaller for mobile */
+        line-height: 1.5;               /* improve readability */
+        word-wrap: break-word;          /* break long words */
+        overflow-wrap: break-word;      /* modern browsers */
+        white-space: normal;            /* allow wrapping */
+        text-align: justify;            /* clean alignment */
+        hyphens: auto;                  /* optional: smoother breaks */
+    }
 }
 .gc_event_bottom_cont{
 	padding-top:40px;
 }
-.gc_event_bottom_cont h2{
-	font-size:22px;
-	color:#000000;
-	font-family: 'Lato', sans-serif;
+.gc_event_bottom_cont h2 {
+    font-size: 22px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .gc_event_bottom_cont h2 {
+        font-size: 16px;               /* smaller for mobile */
+        line-height: 1.4;               /* better readability */
+        word-wrap: break-word;          /* support older browsers */
+        overflow-wrap: break-word;      /* modern wrapping */
+        white-space: normal;            /* allow wrapping */
+        text-align: justify;            /* clean alignment */
+        hyphens: auto;                  /* smoother word breaks */
+    }
 }
 .gc_event_margin{
 	margin-top:35px;
@@ -3761,9 +3855,21 @@ audio {
 	padding-top:40px;
 	padding-bottom:40px;
 }
-.gc_bottom_footer_copy_wrapper p{
-	margin:0;
-	color:#707070
+.gc_bottom_footer_copy_wrapper p {
+    margin: 0;
+    color: #707070;
+}
+
+/* Mobile text responsiveness */
+@media (max-width: 768px) {
+    .gc_bottom_footer_copy_wrapper p {
+        font-size: 14px;              /* Smaller text for mobile */
+        line-height: 1.5;              /* Better readability */
+        word-wrap: break-word;         /* Break long words */
+        overflow-wrap: break-word;     /* Modern browsers */
+        white-space: normal;           /* Allow natural wrapping */
+        text-align: justify;           /* Justify for cleaner look */
+    }
 }
 .gc_bottom_footer_copy_wrapper a{
 	color:#00468c;
@@ -4150,6 +4256,25 @@ audio {
 	.gc_bottom_footer_copy_wrapper{
 		display:inline-block;
 	}
+.gc_filter_heading h1 {
+    font-size: 36px;
+    padding-top: 10px;
+    color: #00468c;
+    position: relative;
+}
+
+/* Mobile text adjustment only */
+@media (max-width: 768px) {
+    .gc_filter_heading h1 {
+        font-size: 22px;              /* smaller size for mobile */
+        line-height: 1.3;              /* better readability */
+        word-wrap: break-word;         /* support for older browsers */
+        overflow-wrap: break-word;     /* modern word wrapping */
+        white-space: normal;           /* allow text to wrap */
+        text-align: justify;           /* cleaner mobile alignment */
+        hyphens: auto;                 /* optional: smooth breaks */
+    }
+}
 	.gc_bottom_footer_right_wrapper ul{
 		display:inline-block;
 		float:none;
