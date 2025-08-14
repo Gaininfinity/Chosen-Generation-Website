@@ -2800,7 +2800,7 @@ audio {
 }
 .gc_event_bottom_cont h4,
 .gc_event_bottom_cont h3 {
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     padding-top: 30px;
     width: calc(100% - 25px);
