@@ -1657,6 +1657,17 @@ pre code {
 .col-xs-12 {
   width: 100%;
 }
+/* style.css */
+
+/* Large screens */
+@media (min-width: 992px) {
+    .col-lg-5.col-lg-offset-1 {
+        float: none !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}
+
 .col-xs-11 {
   width: 91.66666667%;
 }
