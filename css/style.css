@@ -465,8 +465,8 @@ audio {
     background-color: #00468c !important;
     top: 20px;
     position: absolute;
-	left:0;
-    right: 158px;
+	left: 0px;
+    right: 0px;
 	margin:0px auto;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -2333,7 +2333,7 @@ audio {
         white-space: normal;       /* Allow line breaks */
         word-wrap: break-word;     /* Break long words if needed */
         overflow-wrap: break-word;
-        text-align: justify;       /* Justify text for cleaner look */
+        text-align: center;       /* Justify text for cleaner look */
     }
 }
 .gc_filter_heading h1 {
@@ -4590,7 +4590,8 @@ audio {
 	background: #000;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 35px;
+    padding-right: 20px;
+	padding-left: 20px;
 	margin-top:-5px;
 }
 .gc_main_tittle_side_nav ul li{

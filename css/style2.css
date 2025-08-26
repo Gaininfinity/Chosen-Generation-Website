@@ -1410,6 +1410,7 @@ audio {
 }
 .gc_event_timer_btn{
 	float:left;
+	margin-top: 40px;
 }
 .gc_event_timer_btn ul{
 	margin-left:30px;
